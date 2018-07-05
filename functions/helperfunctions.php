@@ -242,7 +242,7 @@ function validate_registration()
 
 			else
 			{
-				$message = '<div class="alert alert-success" role="alert"><strong>warning!</strong> Email or password is invalid </div>';
+				$message = '<div class="alert alert-danger" role="alert"><strong>warning!</strong> Email or password is invalid </div>';
 
 				set_message($message);
 				redirect("login.php");

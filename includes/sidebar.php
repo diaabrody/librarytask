@@ -5,11 +5,15 @@
       $rows=$Category->getCategories();
 
       ?>
-  <h1 class="my-4">Catories</h1>
+      
+      <!-- filer by category -->
+  <h2 class="my-4">category</h2>
     <div class="list-group">
 
      <?php foreach ( $rows as $cate):  ?>
-     <a href="#" class="list-group-item"><?php echo $cate->getName(); ?></a>
+
+     <a href="index.php?cateid=<?php echo $cate->getId(); ?>" class="list-group-item"><?php echo $cate->getName(); ?></a>
+
      <?php endforeach;?>
    </div>
 </div>

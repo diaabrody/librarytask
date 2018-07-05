@@ -15,6 +15,7 @@ class Book extends BaseEntity
     public $authorName;
     public $isAvailable;
     public $userId;
+    public $borrowedOn;
 	
 	function __construct($conn , $bookArray=false)
 	{
@@ -33,6 +34,7 @@ class Book extends BaseEntity
         $this->authorName=$bookArray['author_name'];
         $this->isAvailable=$bookArray['is_available'];
         $this->userId=$bookArray['user_id'];
+        $this->borrowedOn=$bookArray['borrowed_on'];
         
         }
 
@@ -48,14 +50,10 @@ class Book extends BaseEntity
         $id=(int)$id;
         $date_today=date("Y-m-d");
         $date = strtotime($date_today);
-        // the time in timestap
-        $date_after_week = strtotime("+7 day", $date);
-        // the time in format Y-m-d
-        $date_after_week=date("Y-m-d",$date_after_week);
         //get current user id 
         $user_id=current_user()->id;
         $query  = "UPDATE books SET borrowed_on= '{$date_today}'";
-        $query .= ", is_available=1 , borrowed_end = '{$date_after_week}' "; 
+        $query .= ", is_available=1 "; 
         $query .= " , user_id = '{$user_id}'  where id = '{$id}'";
      
 

@@ -7,32 +7,47 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
 
-            <?php if(!logged_in()){
-              echo'<li class="nav-item">
-              <a class="nav-link" href="login.php">login</a>
-            </li>';}?>
-               <?php if(logged_in()){
-              echo "<li class=\"nav-item\">
-              <a class=\"nav-link\" >{$_SESSION["username"]}</a>
-            </li>";}?>
-
-             <?php if(!logged_in()){
-               echo'<li class="nav-item">
-              <a class="nav-link" href="register.php">Register</a>
-            </li>';}?>
-
             <?php if(logged_in()){
-              echo '<li class="nav-item">
-              <a class="nav-link" href="logout.php">logout</a>
-            </li>';
 
-            }?>   
-     
+              echo "<li class=\"nav-item\">
+                      <a class=\"nav-link\" >{$_SESSION["username"]}</a>
+                   </li>";
+
+              echo '<li class="nav-item">
+                      <a class="nav-link" href="userbooks.php">MyBOOKS</a>
+                  </li>';
+
+              echo '<li class="nav-item">
+                      <a class="nav-link" href="logout.php">logout</a>
+                    </li>';    
+
+             }
+
+             else
+             {
+
+
+              echo  '<li class="nav-item">
+                       <a class="nav-link" href="register.php">Register</a>
+                     </li>';
+
+
+              echo  '<li class="nav-item">
+                       <a class="nav-link" href="login.php">login</a>
+                     </li>';
+
+
+             }
+
+
+
+            ?>
+
           </ul>
         </div>
       </div>

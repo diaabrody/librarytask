@@ -12,10 +12,10 @@
 
     <title>library Booking</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap  -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <!-- Custom styles for this page -->
+    <!--  styles for homepage -->
     <link href="public/css/library-homepage.css" rel="stylesheet">
 
   </head>
