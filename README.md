@@ -4,7 +4,7 @@
 
 -To change database name , database username and password . Go to "functions" directory and edit in "constants.php" file
 
--there are schema file. (mysql)
+-there are schema file "library.sql" in the root directorty
 
 
 /*************************************************************************/
@@ -25,7 +25,9 @@
 	so this relation will be not work so we will make relation be 
 
 	many to many  relation 						
-
+/*************************************************************************/
+if the user not logged in and he click Borrow Button . the website will redirect it to
+login page
 
 /*************************************************************************/
 
@@ -34,6 +36,8 @@ main feature in task login , registeration , homepage , mybookspage  finished pl
 filter by category
 
 /***************************************************************************/
+
+
 
 
 
