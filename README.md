@@ -23,9 +23,12 @@
 	 
 	so this relation will be not work so we will make relation be many to many  relation 	
 
+/*****************************php version************************/
 
-						
-/*************************************************************************/
+-php version 7.2
+
+					
+/******************************************************************/
 if the user not logged in and he click Borrow Button . the website will redirect it to
 login page
 

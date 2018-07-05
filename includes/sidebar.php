@@ -7,7 +7,7 @@
       ?>
       
       <!-- filer by category -->
-  <h2 class="my-4">category</h2>
+  <h2 class="my-4">categories</h2>
     <div class="list-group">
 
      <?php foreach ( $rows as $cate):  ?>
