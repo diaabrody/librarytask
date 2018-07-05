@@ -17,14 +17,14 @@
 
 	because here i assume that there are only  one copy from every book 
 
-	so i make the relation 	Book       user  but if there are more than copy from
-							m			1
-
+	so i make the relation 	one to many  but if there are more than copy from
+					
 	every book . or i want to make history from every user borrow book from my system 
 	 
-	so this relation will be not work so we will make relation be 
+	so this relation will be not work so we will make relation be many to many  relation 	
 
-	many to many  relation 						
+
+						
 /*************************************************************************/
 if the user not logged in and he click Borrow Button . the website will redirect it to
 login page
